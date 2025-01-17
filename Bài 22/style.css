@@ -1,0 +1,24 @@
+body {
+  /* Đổi hình nền cho thẻ */
+  background-image: url(./img/mezidi-zineb-MXCoE3WbKss-unsplash.jpg);
+}
+h1 {
+  /* màu chữ  */
+  color: blueviolet;
+  /* kiểu chữ */
+  font-style: italic;
+  /* font chữ */
+  font-family: Arial, Helvetica, sans-serif;
+  /* chuyển hoa thường  */
+  /* capitalize -  viết hoa chữ cái đầu.
+  lowercase - viết thường hết.
+  uppercase - viết hoa hết */
+  text-transform: capitalize;
+  /* cân giữa */
+  text-align: center;
+  /* Cỡ chữ */
+  font-size: 18px;
+}
+p {
+  opacity: ;
+}
