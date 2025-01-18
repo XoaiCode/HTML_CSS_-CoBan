@@ -1,0 +1,17 @@
+/* gọi tên id (#) - gọi tên class (.) */
+#doanvan2 {
+  color: red;
+  font-size: 20px;
+}
+.demo {
+  color: yellow;
+}
+.demo2 {
+  font-size: 40px;
+}
+h1 {
+  color: blue;
+}
+.item_ul_1 {
+  list-style: none;
+}
