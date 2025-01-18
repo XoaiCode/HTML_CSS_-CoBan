@@ -1,0 +1,11 @@
+/* Chọn thẻ h2 ngay sau thẻ h1 */
+h1 + h2 {
+  color: red;
+}
+/* chọn tất cả thẻ h3 đứng sau thẻ h1  */
+h1 ~ h3 {
+  color: aqua;
+}
+div ~ div {
+  color: blueviolet;
+}

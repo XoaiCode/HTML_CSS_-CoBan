@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Bài 26.1 : COMBINATOR SELECTORS P2 - element,element .class1.class2
+    </title>
+  </head>
+  <body>
+    <h1 class="demo">Tiêu đề</h1>
+    <h2 class="demo demo2">Tiêu đề nhỏ 1</h2>
+    <!-- h2.demo.demo2 :tạo h2 có class là demo và demo2 -->
+    <h2>Tiêu đề nhỏ 2</h2>
+    <h2 id="Tieu_de2">Tiêu đề nhỏ 3</h2>
+    <h2>Tiêu đề nhỏ 4</h2>
+    <h2>Tiêu đề nhỏ 5</h2>
+    <p class="demo">Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <div>
+      <p>Đoạn văn nhỏ 1</p>
+      <block>
+        <p>Đoạn văn thêm</p>
+      </block>
+      <p>Đoạn văn nhỏ 2</p>
+      <p>Đoạn văn nhỏ 3</p>
+    </div>
+    <div class="loichuc">
+      <p>Chúc các bạn học tốt1</p>
+      <p>Chúc các bạn học tốt2</p>
+    </div>
+    <ul>
+      <li>Nội dung 1</li>
+      <li>Nội dung 2</li>
+      <li>Nội dung 3</li>
+    </ul>
+    <h3>element,element</h3>
+    <!-- element,element : Áp dụng cho toàn bộ thẻ được liệt kê, mỗi bộ cách nhau bởi dấu , -->
+    <h3>.Class1.Class2</h3>
+    <!-- class1.class2 : chọn thẻ có tên class1 và class2 (gần giống điều kiên and) -->
+    <h3>Space selector</h3>
+    <!-- element element (div p) : Chọn tất cả các thẻ p nằm trong thẻ div -->
+    <!-- selector1 space selector2 : chọn tất cả s2 là con của s1 -->
+    <h3>> selector</h3>
+    <!-- element>element (div>p): chọn tất cả thẻ p là con trực tiếp thẻ div -->
+    <h3>+ selector</h3>
+    <!-- element + element (div +p) : Chọn phần tử p đầu tiên đặt sát ngay sau phần tủ div -->
+    <h3>~ selector</h3>
+    <!-- element1 ~ element2 (div ~ ul) : chọn tất cả thẻ ul nằm sau thẻ div -->
+  </body>
+</html>
