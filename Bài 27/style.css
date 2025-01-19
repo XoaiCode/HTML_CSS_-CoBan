@@ -1,0 +1,23 @@
+p[href] {
+  color: red;
+}
+[target="_blank"] {
+  color: pink;
+}
+[title~="Tuhoc.cc"] {
+  color: red;
+}
+[title*="pic"] {
+  font-size: 14px;
+  color: green;
+}
+[title|="pic"] {
+  color: yellow;
+}
+[title^="picc"] {
+  color: yellowgreen;
+}
+
+[title$="8"] {
+  color: tomato;
+}

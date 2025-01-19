@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài 27:Attribute selectors</title>
+  </head>
+  <body>
+    <h1>Attribute selectors</h1>
+    <h2>Attribute</h2>
+    <!-- [attribute]-[href] : chọn tất cả các thẻ có thuộc tính (property): href -->
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M">click vào em đi 1</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M">click vào em đi 2</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M">click vào em đi 3</a>
+    <p href>Lorem ipsum dolor sit amet.</p>
+    <h2>Attribute = value</h2>
+    <!-- [target="_blank"] : Chọn tất cả thuộc tính có chính xác giá trị target="_blank" -->
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M" target="_blank"
+      >Nhấn vào em 1</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M" target="_self"
+      >Nhấn vào em 2</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M">Nhấn vào em 3</a>
+    <!-- Thuộc tính target = "_blank": mở tab mới - target = "_self" :mở tại chính tab đó˚ -->
+    <h2>Attribute~= value</h2>
+    <!-- [title~="pic"]: chọn tất cả các thuộc tính : title có chứa từ pic trong giá trị -->
+    <!-- Chỉ áp dụng với những từ đơn lẻ pic, không có tác dụng với từ pic3 -->
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M" title="Tuhoc.cc"
+      >Nhấp vào đây 1</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M" title="Tuhoc.ccb"
+      >Nhấp vào đây 2</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=ZysZFKtRy3M" title="Tuhoc.cc"
+      >Nhấp vào đây 3</a
+    >
+    <h2>Attribute*=value</h2>
+    <!-- [title*="pic"] : Chọn tất cả các thuộc tính title có chứa chuỗi pic trong giá trị -->
+    <a href="" title="pic so1">Bấm vào em 1</a><br />
+    <a href="" title="pic3 so 2">Bấm vào em 2</a><br />
+    <a href="" title="chon pic2">Bấm vào em 3</a>
+    <h2>Attribute|=value</h2>
+    <!-- [title|="pic"] : title có 1 từ duy nhất bắt đầu bằng từ pic: pic,pic-123 -->
+    <a href="" title="pic">Bấm vào em 1</a><br />
+    <a href="" title="pic-so2">Bấm vào em 2</a><br />
+    <a href="" title="chon pic2">Bấm vào em 3</a>
+    <h2>Attribute^=value</h2>
+    <!-- [title^="pic"]: chọn tất cả các thuộc tính title bắt đầu bằng từ pic (không quan tâm space ở sau) -->
+    <a href="" title="picc234">Bấm vào em 4</a><br />
+    <a href="" title="picc so2">Bấm vào em 5</a><br />
+    <a href="" title="jffk picc-nhak dju ">Bấm vào em 6</a>
+    <h2>Attribute$=value</h2>
+    <!-- [title$="pic"]:Chọn tất cả các thuộc tính title kết thúc bằng kí tự pic-->
+    <a href="" title="picc234 8">Bấm vào em 4</a><br />
+    <a href="" title="picc so2 8">Bấm vào em 5</a><br />
+    <a href="" title="jffk picc-nhak 8 dju ">Bấm vào em 6</a>
+  </body>
+</html>
