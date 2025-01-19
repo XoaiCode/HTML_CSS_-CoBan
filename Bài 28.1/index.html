@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài 28.1: Pseudo - Classes</title>
+  </head>
+  <body>
+    <h1>Pseudo - Classes P2</h1>
+    <h2>:First-child</h2>
+    <!-- p:first-child : chọn các thẻ p là thẻ con đầu tiên. -->
+    <h2>:Last-child</h2>
+    <!-- p:last-child :chọn các thẻ p là thẻ con cuối cùng. -->
+    <h2>:Nth-child(n)</h2>
+    <!-- p:nth-child(2) : chọn các thẻ p là thẻ con thứ 2 từ trên xuống -->
+    <h2>:Nth-last-child(n)</h2>
+    <!-- p:nth-last-child(2) : chọn các thẻ p là thẻ con thứ 2 từ cuối lên -->
+    <h2>:Only-child</h2>
+    <!-- p:only-child: chọn các thẻ p là thẻ con duy nhất -->
+    <h2>:Fist-of-type</h2>
+    <!-- p:fist-of-type : tác động lên thẻ p xuất hiên Đầu Tiên trong thẻ cha -->
+    <h2>:Last-of-type</h2>
+    <!-- p:last-of-type : tác động lên thẻ p xuất hiện Cuối Cùng trong thẻ cha -->
+    <h2>:Nth-of-type(n)</h2>
+    <!-- p:nth-of-type(n): tác động lên thẻ p xuất hiện thứ n Từ Trên Xuống trong thẻ cha  -->
+    <h2>:Nth-last-of-type(n)</h2>
+    <!-- p:nth-last-of-type: tác động lên thẻ p xuất hiện thứ n Từ Dưới Lên trong thẻ cha -->
+    <h2>:Only-of-type</h2>
+    <!-- p:only-of-type : tác động lên thẻ p xuất hiên Duy nhất trong thẻ cha -->
+    <h2>:Not(selector)</h2>
+    <!-- .top:not(p) : chọn các thẻ class = "top" loại trừ thẻ p -->
+    <!-- Có thể áp dụng với pseudo class -->
+    <div>
+      <p class="top">Đoạn văn 1</p>
+      <p>Đoạn văn 2</p>
+      <p>Đoạn văn 3</p>
+    </div>
+    <div>
+      <h1 class="top">Mở đầu</h1>
+      <p>Đoạn cuối 1</p>
+      <p class="top">Đoạn cuối 2</p>
+      <p>Đoạn cuối 3</p>
+      <h2 class="top">Kết thúc</h2>
+    </div>
+    <div>
+      <p>Thẻ duy nhất</p>
+    </div>
+    <img src="./img/Cap-do-uu-tien.img" alt="vd_cap_do_uu_tien" width="720" />
+  </body>
+</html>

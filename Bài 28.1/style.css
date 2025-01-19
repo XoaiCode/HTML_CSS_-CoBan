@@ -1,0 +1,80 @@
+/* -- Tác động lên thẻ p là thẻ con đầu tiên */
+/* p:first-child {
+  color: red;
+  font-size: 30px;
+} */
+/* -- Tác động lên thẻ p là thẻ con cuối */
+/* p:last-child {
+  color: yellow;
+  font-size: 35px;
+} */
+/* -- Tác động lên thẻ p thứ 2 từ trên xuống */
+/* -- odd :nhảy theo n lẻ - even: nhảy theo n chẵn - 2n+1: nhảy theo step mong muốn */
+/* p:nth-child(2) {
+  color: blue;
+} */
+/* -- Nếu 
+n=0 -> 1
+n=1 -> 4
+n=2 -> 7 */
+/* p:nth-child(3n + 1) {
+  color: red;
+} */
+/* -- Tác động thẻ p từ dưới lên  */
+/* p:nth-last-child(2) {
+  color: green;
+} */
+/* -- Tác động lên thẻ p duy nhất (không còn thẻ con nào cả) */
+/* p:only-child {
+  color: red;
+} */
+/* ------------------------------------------------------------------------------------ */
+
+/* -- Không quan tâm trên hay dưới thẻ p có thẻ khác hay không */
+/* -- Kiểu loại thẻ p xuất hiện đầu tiên */
+/* p:first-of-type {
+  color: red;
+} */
+/* -- Kiểu loại thẻ p xuất hiên cuối cùng */
+/* p:last-of-type {
+  color: green;
+} */
+/* -- Kiểu loại thẻ p xuất hiện thứ n từ trên xuống */
+/* -- odd :nhảy theo n lẻ - even: nhảy theo n chẵn - 2n+1: nhảy theo step mong muốn */
+/* p:nth-of-type(2) {
+  color: blue;
+} */
+/* -- Nếu 
+n=0 -> 1
+n=1 -> 4
+n=2 -> 7 */
+/* p:nth-of-type(3n + 1) {
+  font-size: 30px;
+  color: pink;
+} */
+/* -- Kiểu loại thẻ p xuất hiện thứ n từ dưới lên */
+/* p:nth-last-of-type(2n + 1) {
+  color: red;
+} */
+/* -- Kiểu loại thẻ p xuất hiện duy nhất trong thẻ cha */
+p:only-of-type {
+  color: blueviolet;
+  font-size: 30px;
+}
+/* -- Chọn tất cả có class = "top" ngoại trừ (P) */
+.top:not(p) {
+  color: brown;
+}
+/* -- có thể áp dụng vs pseudo class */
+.top:not(:first-of-type) {
+  color: red;
+}
+
+/* -------------------------------------------------------- */
+/* --------------------MỨC ĐỘ ƯU TIÊN ---------------------*/
+/* 1. !important
+    2. Inline style (Viết trên HTML)
+    3. ID (#) selector
+    4. Class(.) hoặc pseudo-class (:) selector 
+    5. Element selector (h,p,li,div,...)
+    6. Universal selector(*) :Bộ chọn chung. */
