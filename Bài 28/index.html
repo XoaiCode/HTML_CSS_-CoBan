@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài 28 : Pseudo - Classes</title>
+  </head>
+  <body>
+    <h1>Pseudo-Classes</h1>
+    <!-- selector:pseudo-classes {(khối lệnh css) property:value} -> cú pháp chung -->
+    <h2>:Hover</h2>
+    <!-- p:hover : tác động lên thẻ p khi di chuột qua -->
+    <p class="di_chuot">Xin chào</p>
+    <p id="line1">Hãy di chuột qua em</p>
+    <h2>:Active</h2>
+    <!-- a:active : chọn thẻ a khi nhấn giữ chuột -->
+    <p class="giu">Xin Chào</p>
+    <p id="line2">Click và giữ em</p>
+    <h2>:Link</h2>
+    <!-- a:link chọn thẻ a có liên kết chưa click vào -->
+    <a href="http://tuhoc.cc" class="click_me"> Click vào đây</a>
+    <h2>:Visited</h2>
+    <!-- a:visited : chọn thẻ a có liên kết đã click truy cập -->
+    <!-- Tăng trải nhiệm người dùng : nhắc cho người dùng đã truy cập vào rồi -->
+
+    <a href="http://tuhoc.cc" id="line3" target="_blank">Click vào em</a>
+    <h2>:Empty</h2>
+    <!-- div:empty : Chọn các thẻ div không có nội dung -->
+    <div class="div_elm"></div>
+    <h2>:Target</h2>
+    <!-- #home:target : chọn thẻ có id ="home" khi trên URL có hash tương ứng. -->
+    <!-- vd : https://domain.com/#home -->
+    <p>Xin Chào</p>
+    <ul>
+      <li>
+        <a href="#mo_bai">Chuyển đến mở bài</a>
+      </li>
+      <li>
+        <a href="#than_bai">Chuyển đến thân bài</a>
+      </li>
+      <li>
+        <a href="#ket_bai">Chuyển đến kết bài</a>
+      </li>
+    </ul>
+    <h4 id="mo_bai">Mở bài</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illum eos
+      earum molestias esse libero expedita corporis assumenda, quidem odio
+      impedit nisi excepturi ducimus. Debitis fugit placeat architecto? Impedit,
+      iste. Ipsam laboriosam laborum atque vitae temporibus, at animi dolores
+      distinctio vero tempore deleniti rerum id eaque exercitationem maiores
+      illo? Ea perspiciatis obcaecati minus quo animi quam ab provident porro
+      laboriosam. Labore obcaecati veniam unde, molestias aliquam similique
+      deleniti repellat libero id quas quos magnam quod suscipit et minima cum
+      explicabo non laborum aperiam sunt? Debitis labore vero nihil in nemo? Ex
+      eveniet fugit, deserunt hic, unde pariatur provident voluptatem facere
+      quasi asperiores error? Alias ducimus tenetur quia laborum, ratione nobis
+      eveniet nihil asperiores earum, modi unde aliquam amet est enim!
+    </p>
+    <h4 id="than_bai">Thân bài</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      temporibus assumenda esse veritatis numquam asperiores excepturi omnis,
+      rerum aperiam praesentium eligendi illo fugiat rem tempore cupiditate quis
+      dolor repudiandae. Dolor. Nam iste molestiae laudantium ipsum illum, est
+      ullam accusamus asperiores odio quidem repudiandae optio ad et.
+      Repellendus possimus ut ratione reprehenderit placeat vero blanditiis,
+      dolorum temporibus delectus omnis eius assumenda. Repellendus soluta unde
+      tempora magni atque, praesentium officiis veniam deserunt labore molestias
+      laborum suscipit porro illum voluptates incidunt aliquam odio voluptatibus
+      cupiditate maxime eligendi nulla. Excepturi atque cupiditate numquam
+      libero. Vero sit neque consequuntur tempora, excepturi, blanditiis
+      exercitationem non nesciunt odio at dolorum? Libero voluptate aut porro
+      nesciunt ad molestias corrupti. Sapiente, dicta excepturi iusto architecto
+      fugiat blanditiis? Quis, similique. Velit quos ab incidunt, placeat alias
+      saepe commodi ipsa ut at. Quia placeat saepe molestiae, accusamus maiores
+      enim rem dicta! Ullam amet earum velit modi minus. Nihil incidunt dolores
+      cupiditate? Quibusdam, odio? Aut voluptate voluptatibus repellat! Eveniet
+      quod deleniti illo suscipit totam, dolore facere odit incidunt
+      consequatur, praesentium iusto et. Sed saepe sunt possimus magni ipsum
+      suscipit minus ut quod? Minima, sunt sint? Consequuntur facere consectetur
+      in, ducimus cupiditate maxime, nihil, accusamus sapiente eveniet ipsum
+      quia dignissimos atque molestias maiores. Tenetur, voluptate nemo. Natus
+      similique expedita repellat sapiente suscipit aspernatur! Repellat
+      explicabo aliquam minus modi dolor deserunt, delectus labore earum fuga
+      consectetur perspiciatis voluptas neque saepe corporis quas. Quas sunt
+      ducimus ut mollitia saepe beatae in sint voluptatibus, ratione velit.
+    </p>
+    <h4 id="ket_bai">Kết bài</h4>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit odit
+      saepe laboriosam debitis sit? Natus aliquam eligendi sequi sapiente! At
+      aliquam totam, doloremque cum mollitia aspernatur sunt eos ipsum
+      molestias. Quas dicta, perferendis rem quis ipsum assumenda voluptate
+      facilis quaerat a modi nihil nostrum ut asperiores ratione! Eaque tempore
+      provident quibusdam tenetur nobis atque ea repudiandae. Rerum eligendi
+      obcaecati ipsum? Deleniti excepturi cumque architecto enim pariatur earum
+      illo cum aliquam placeat maiores unde impedit consectetur neque sequi, rem
+      eum ut fugit delectus consequuntur eligendi eos dolore alias eveniet ipsa?
+      Eius.
+    </p>
+  </body>
+</html>

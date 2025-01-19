@@ -1,0 +1,34 @@
+/* khi di chuyển chuột qua */
+.di_chuot:hover {
+  color: red;
+  font-size: 30px;
+}
+/* khi click và nhấn giữ */
+#line2:active {
+  font-size: 20px;
+  color: green;
+}
+/* khi chưa click */
+.click_me:link {
+  color: chocolate;
+}
+/* Sau khi đã click */
+#line3:visited {
+  color: red;
+}
+/* Khi phần tử trống */
+.div_elm:empty {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+/* khi phần tử không trống */
+.div_elm {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+/* Tác động đến h4 khi được click */
+h4:target {
+  color: blue;
+}
