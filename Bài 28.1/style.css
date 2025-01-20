@@ -1,8 +1,8 @@
 /* -- Tác động lên thẻ p là thẻ con đầu tiên */
-/* p:first-child {
+p:first-child {
   color: red;
   font-size: 30px;
-} */
+}
 /* -- Tác động lên thẻ p là thẻ con cuối */
 /* p:last-child {
   color: yellow;
@@ -57,18 +57,18 @@ n=2 -> 7 */
   color: red;
 } */
 /* -- Kiểu loại thẻ p xuất hiện duy nhất trong thẻ cha */
-p:only-of-type {
+/* p:only-of-type {
   color: blueviolet;
   font-size: 30px;
-}
+} */
 /* -- Chọn tất cả có class = "top" ngoại trừ (P) */
-.top:not(p) {
+/* .top:not(p) {
   color: brown;
-}
+} */
 /* -- có thể áp dụng vs pseudo class */
-.top:not(:first-of-type) {
+/* .top:not(:first-of-type) {
   color: red;
-}
+} */
 
 /* -------------------------------------------------------- */
 /* --------------------MỨC ĐỘ ƯU TIÊN ---------------------*/
