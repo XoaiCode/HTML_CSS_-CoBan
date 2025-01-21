@@ -30,29 +30,23 @@
   border: 10px solid yellow;
   margin: 15px;
 }
-.box_1 {
+.box {
   width: 100px;
   height: 100px;
   color: red;
-  background-color: blue;
   padding: 10px;
+}
+.box1 {
+  background-color: blue;
   border: 10px inset black;
 }
-.box_2 {
-  width: 100px;
-  height: 100px;
-  color: red;
+.box2 {
   background-color: yellowgreen;
-  padding: 10px;
   border: 10px inset rgb(232, 6, 6);
   margin-left: 140px;
 }
-.box_3 {
-  width: 100px;
-  height: 100px;
-  color: red;
+.box3 {
   background-color: blueviolet;
-  padding: 10px;
   border: 10px inset rgb(9, 227, 53);
   margin-left: 280px;
 }
