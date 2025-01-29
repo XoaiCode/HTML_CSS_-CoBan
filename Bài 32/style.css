@@ -1,0 +1,13 @@
+.box {
+  width: 100px;
+  height: 150px;
+  padding: 20px;
+  border: 10px solid red;
+  /* Kích thước chỉ là của content - Khi đổi kích thước sẽ ảnh hưởng đến kích thước tổng thể */
+  box-sizing: content-box;
+}
+
+.box2 {
+  /* Kích thước toàn bộ phần tử - khi đổi kích thước se không ảnh hưởng đến kich thước tổng thể */
+  box-sizing: border-box;
+}
