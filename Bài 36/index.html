@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài 36: CSS - Units (Pixel)</title>
+  </head>
+  <body>
+    <h1>Đơn vị trong css</h1>
+    <h2>Dơn vị tuyệt đối - Pixel</h2>
+    <!-- Tài liệu CSS Units -->
+    <!-- Pixel: Picture element (Thành phần hình ảnh) - Điểm ảnh là đơn vị cơ bản để
+    đo kích thước 1 hình ảnh kĩ thuật số. -->
+    <!-- Nếu người dùng thay đổi cài đặt trên trình duyệt, các kích thước vẫn giữ nguyên không đổi. -->
+    <p>Tự học tất cả</p>
+    <h2>Đơn vị tương đối - Relative Lengths (%)</h2>
+    <!-- % : kích thước bằng % so với thẻ cha của nó -->
+    <!-- Nếu thẻ cha không có kích thước thì sẽ lấy kích thước mặc địch của trình duyệt. -->
+    <h2>Đơn vị tương đối - VW - VH</h2>
+    <!-- VW : Chiều rộng khung hình - phần hiển thị trên browser -->
+    <!-- VH : chiều dài khung hình - phần hiển thị trên browser -->
+    <h2>Đơn vị tương đối - em</h2>
+    <!-- Em : kích thước của nó dựa vào font size hiện tại (có kế thừa) . -->
+    <!-- Thẻ cha và thẻ con không có font size thì sẽ lấy font size của root HTML -->
+    <h3>Thẻ cha có giá trị tuyệt đối</h3>
+    <!-- Cả thẻ cha và thẻ con đều đặt font size thì sẽ ưu tiên đặt font-size của chính nó  -->
+    <h3>Thẻ cha có giá trị tương đối</h3>
+    <!-- Thẻ cha sẽ lấy giá trị gốc. -->
+    <!-- Thẻ con tiếp tục kế thừa thẻ cha. -->
+    <!-- Vì có tính kế thừa nên sẽ tạo ra cấu trúc xếp tầng  -->
+    <h2>Đơn vị tương đối - REM</h2>
+    <!-- Rem : Kích thước dựa vào font size của root HTML (16px) không kế thừa -->
+    <!-- Không có tính kế thừa nên không thể tạo ra cấu trúc xếp tầng -->
+    <h2>Tính toán và quy đổi Rem</h2>
+    <!-- Thông thường 1rem = 16px --- > 1rem = 10px -->
+    <!-- Quy đổi 1rem = 10px --- > 10/16*100 =62,5% => cần giảm font-size của HTML xuống 62,5% -->
+    <!-- ==> Cài font-size của HTML = 62,5% ==> Sửa đổi sẽ dễ dàng hơn. -->
+  </body>
+</html>
