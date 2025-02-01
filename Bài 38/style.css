@@ -1,0 +1,129 @@
+body {
+  font-family: "Inter", serif;
+}
+p {
+  font-weight: 400;
+  /* Có 2 đơn vị là 1.5 và 150% so với font-size */
+  line-height: 1.5;
+  line-height: 150%;
+}
+h1 {
+  /* Sử dụng line-height để căn dòng */
+  height: 120px;
+  background-color: blue;
+  line-height: 110px;
+  text-align: center;
+}
+h2 {
+  color: rgb(255, 0, 187);
+}
+#p1 {
+  /* dãn theo chiều dương */
+  letter-spacing: 20px;
+}
+#p1 + p {
+  /* dãn theo chiều âm */
+  letter-spacing: -4px;
+}
+#p2 {
+  /* Dãn theo các từ  */
+  word-spacing: 50px;
+}
+
+/* ----------------Text-Decoration---------- */
+#strong2 {
+  text-decoration: underline;
+}
+#strong3 {
+  text-decoration: line-through;
+}
+#strong4 {
+  text-decoration: overline;
+}
+#strong5 {
+  text-decoration: underline dotted blue 5px;
+}
+
+/* ----------------Text-Indent---------- */
+.p1 {
+  text-indent: 40px;
+}
+.p2 {
+  /* nếu là âm sẽ thụt sang bên trái  */
+  text-indent: -30px;
+}
+
+/* ----------------Text-Transform---------- */
+
+.pt1 {
+  text-transform: capitalize;
+}
+
+.pt2 {
+  text-transform: lowercase;
+}
+.pt3 {
+  text-transform: uppercase;
+}
+
+/* ----------------Word-Break---------- */
+#pb {
+  /* Gặp lề tự động bẻ xuống dòng */
+  word-break: break-all;
+}
+
+/* ----------------Text-Shadow---------- */
+#PTS {
+  margin: 40px;
+  /* Nếu thay đổi 2 thuộc tính đầu là âm bóng đổ sẽ đổi chiều */
+  text-shadow: 10px 5px 3px red;
+}
+
+/* ----------------Overflow------------ */
+.Pof {
+  width: 300px;
+  height: 200px;
+  background-color: #07cd98;
+  overflow: auto;
+  overscroll-behavior: none;
+}
+
+/* -------------Custom ScrollBar------------- */
+/* width - Độ rộng */
+.Pof::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track - Hộp đựng thanh kéo, cũng có thể bo viền */
+.Pof::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 50px;
+}
+
+/* Handle - Thanh Cuộn */
+.Pof::-webkit-scrollbar-thumb {
+  background: #e80606;
+  border-radius: 50px;
+}
+
+/* Handle on hover - khi chỉ vào thanh cuộn sẽ đổi màu */
+.Pof::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* -------------Text-Overflow------------- */
+.PTO {
+  width: 300px;
+  background-color: #07cd98;
+  white-space: nowrap;
+  overflow: hidden; /* Ẩn nội dung thừa */
+  text-overflow: ellipsis;
+}
+.PTO2 {
+  background-color: aqua;
+  overflow: hidden;
+  /* Thuộc tính làm dấu 3 chấm ở dòng 2 */
+  -webkit-line-clamp: 2; /* đấu 3 chấm xuất hiện ở dòng */
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}

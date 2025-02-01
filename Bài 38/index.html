@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài 38: CSS FONTS: Font name - Font Family</title>
+  </head>
+  <body>
+    <h1>Fonts chữ trong css</h1>
+
+    <h2>I, Các kiểu fonts</h2>
+    <!-- Kiểu Font Sans serif : không có gai ở đầu chữ cái -->
+    <!-- Kiểu Font Serif : có gai ở đầu chữ cái -->
+    <!-- Kiểu Font Monospace : có cùng độ rộng - chiều ngang chữ cái luôn luôn bằng nhau. -->
+
+    <h2>II, System fonts CSS (Fonts chữ hệ thống)</h2>
+    <h3>Sử dụng font chữ có sẵn của hệ thống</h3>
+    <!-- Sử dụng fonts chữ có sẵn trên hệ điều hành máy của khách hàng
+     -> tối ưu hoá truy cập, đẩy nhanh tốc độ tải trang -->
+    <h3>Nhúng fonts chữ</h3>
+    <!-- Nhúng font chữ, sử dụng trên trang wed để bất cứ máy nào cũng hiện thị giống
+    nhau, kể cả máy khách hàng không sử dụng font chữ này. -->
+
+    <h2>III, Font-wight, line-height</h2>
+    <h3>Font-Wight</h3>
+    <!-- Là độ giày của chữ. -->
+    <p>
+      Vd : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, ullam
+      atque et, illum cum sed officiis, facilis fugit ut ipsam dolore est nulla
+      animi quasi earum officia quam tenetur maiores? Atque aliquid officia
+    </p>
+    <h3>Line-height</h3>
+    <!-- Là khoảng cách giữa các dòng -->
+    <!-- Cũng có thể sử dụng line-height để căn dòng -->
+
+    <!-- ----------------------------Typography in CSS------------------------ -->
+    <h1>Typography in CSS</h1>
+    <!-- Letter-spacing, Would-spacing, text-align -->
+    <!-- Text-decoration, Text-indent, Text-transform. -->
+    <!-- White-space, Word-break -->
+    <!-- Text-Shadow, Overflow -->
+    <!-- Text-OverFlow -->
+
+    <h2>I, Letter-spacing</h2>
+    <!-- Tăng giảm khoảng các giữa các kí tự. -->
+    <p id="p1">VD: Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <p>VD: Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+    <h2>II, Would-spacing</h2>
+    <!-- Tăng giảm khoảng cách giữa các từ. -->
+    <p id="p2">VD: Lorem ipsum dolor sit amet.</p>
+
+    <h2>III, Text-align</h2>
+    <!-- Dùng để căn text hay nội dung văn bản * Căn giữa so với box chứa nó - chứ không phải căn giữa trang * -->
+    <!-- Justify : Căn đều 2 bên -->
+    <!-- Left : Căn trái - mặc định -->
+    <!-- Right: Căn phải -->
+    <!-- Center : Căn giữa -->
+    <!-- LƯU Ý :với các thẻ inline và inline - block -->
+
+    <h2>IV, Text-Decoration</h2>
+    <!-- None: Bỏ gạch chân. -->
+    <!-- Underline : thêm gạch chân. -->
+    <!-- Line-Through : Thêm gạch ngang. -->
+    <!-- Overline : Gạch ngang trên đầu. -->
+    <!-- Underline Dotted Blue 5px : có thể định kiểu, Loại, màu, kích thước. -->
+    <p>None <strong id="strong1">250.000đ</strong></p>
+    <p>Underline <strong id="strong2">250.000đ</strong></p>
+    <p>Line-Through <strong id="strong3">250.000đ</strong></p>
+    <p>OverLine <strong id="strong4">250.000đ</strong></p>
+    <p>Underline Dotted Blue 5px <strong id="strong5">250.000đ</strong></p>
+
+    <h2>V, Text-Indent</h2>
+    <!-- Thuộc tính text-indent: là thụt lề -->
+    <p class="p1">Lorem ipsum dolor sit.</p>
+    <p class="p2">Lorem ipsum dolor sit.</p>
+
+    <h2>VI, Text-Transform</h2>
+    <!-- Capitalize : viết hoa toàn bộ chữ cái đầu tiên -->
+    <!-- Lowercase : viết thường toàn bộ -->
+    <!-- Uppercase : viết hoa toàn bộ. -->
+    <p class="pt1">Capitalize : viết hoa chữ cái đầu tiên</p>
+    <p class="pt2">Lowercase: viết thường toàn bộ</p>
+    <p class="pt3">Uppercase : viết hoa toàn bộ</p>
+
+    <h2>VII, White-Space</h2>
+    <!-- Quy định về khoảng trắng khi code -->
+
+    <!-- Ngoại trừ thẻ pre giữ nguyện định dạng code -->
+    <!-- Code có nhiều khoảng trắng sẽ tự động còn 1 khoảng trắng. -->
+    <!-- Code có nhiều dòng trắng sẽ tự động còn 1 khoảng trắng. -->
+    <!-- Code có nội dung quá dài, chạm tới lề sẽ tự động xuống dòng. -->
+
+    <!-- Normal : Trạng thái mặc định -->
+    <!-- Nowrap :Không xuống dòng kể cả chạm tới lề -->
+    <!-- Pre : Giữ nguyên định dạng code giống thẻ PRE nhưng hết câu sẽ xuống dòng -->
+    <!-- Pre-line: Khoảng trắng mỗi dòng sẽ giữ nguyên, còn khoảng trắng trong văn bản sẽ loại bỏ -->
+    <!-- Pre-Wrap: Giữ nguyên khoảng trắng dòng và khoảng trắng trong văn bản,
+      nhưng đến lề không đủ chữ sẽ tự động xuống dòng-->
+
+    <h2>VIII, Word-Break</h2>
+    <!-- Khi cố tình nhập đoạn text dài liền nhau thì có thể gây vỡ giao diện vì text không bị xuống dòng. -->
+    <!-- ==> Có thể dùng thuộc tính Word-Break: break-all để bẻ xuống dòng -->
+    <p id="pb">
+      LoremipsumdolorsitametonsecteturadipisicingelitRepudiandaeconsequaturmnisquaeratobcaecatidebiti
+      sevenietsitaiasoditeligendiQuasi.
+    </p>
+
+    <h2>IX, Text-Shadow</h2>
+    <!-- Thuộc tính text-shadow để làm bóng đổ của text -->
+    <!-- Text-shadow: 0px 0px 0px color - ngang, dọc, độ mờ , màu  -->
+    <h3 id="PTS">Sống Cuộc Đời Bạn Muốn</h3>
+
+    <h2>X, Overflow</h2>
+    <!-- Overflow : scroll tự động hiện thanh cuộn khi bị tràn khung, không phá vỡ BOX (Luôn luôn hiện thanh cuộn) -->
+    <!-- Overflow: visible(default) thuộc tính mặc định -->
+    <!-- Overflow: hidden Ẩn nội dung khi nội dung vượt box chứa -->
+    <!-- Overflow: auto - Nếu nội dung ngắn sẽ không tạo ra thanh cuộn Scroll bar,
+         nội dung dài sẽ tự động tạo thanh cuộn scroll bar -->
+    <div class="Pof">
+      <p>
+        Thứ nhất: Bạn cần phải tích luỹ kiến thức - tự học là vua. <br />
+        Thứ hai: Bạn cần phải tiết kiệm, tích luỹ của cải. <br />
+        Thứ ba: Cần giao tiếp - khi bạn truyền tải ngôn ngữ của bạn hiệu quả
+        nhất bạn sẽ có nhiều cơ hội hơn. <br />
+        Thứ tư: Xậy dựng những thói quen vô địch. <br />
+        Thứ năm: Tìm thầy mà học. <br />
+        Thứ sáu: Bắt đầu kinh doanh. <br />
+        Thứ bảy: Thất bại không chùn bước, người thành công là người chịu được
+        thất bại trước thành công.
+      </p>
+    </div>
+    <p>
+      Không Dành Thời Gian Cho Mình Mà Lại Nghĩ Cho Người Khác: Bạn bỏ ra rất
+      nhiều thời gian với người khác, bạn bỏ ra rất nhiều thời gian để làm người
+      khác thích bạn, bạn còn biết rõ họ hơn cả bản thân mình, bạn học hỏi họ,
+      bạn biết về họ, bạn muốn ở bên họ, bạn muốn giống như họ. Và bạn biết tại
+      sao không? Bạn dành ra quá nhiều thời gian với họ đến nỗi bận quên mất bạn
+      là ai?.
+    </p>
+
+    <h3>Overscroll-Behavior</h3>
+    <!-- Là một thuộc tính CSS được sử dụng để điều chỉnh cách trình duyệt xử lí sự
+    kiện "Overscrolling ", Tức là khi người dùng cuộn trang đến khi không còn gì
+    để cuộn nữa. -->
+    <!-- Auto: Khi cuộn hết thanh scroll sẽ tự động cuộn đến thanh bên ngoài -->
+    <!-- Contain: Khi cuộn hết thanh Scroll sẽ không cuộn thanh bên ngoài. -->
+    <!-- None : Thuộc tính cũng giống với Contain -->
+
+    <h3>Custom ScrollBar CSS</h3>
+    <!-- Tuỳ chỉnh thanh cuộn ScrollBar -->
+
+    <h2>XI, Text-Overflow</h2>
+    <!-- Khi tạo Box có nhiều text hơn cả box chứa sẽ sử dụng Text-Overflow để ẩn nội dung. -->
+    <p class="PTO">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo tempora,
+      nesciunt aliquid fugiat laborum reiciendis blanditiis exercitationem.
+    </p>
+
+    <!-- ---------Làm dấu ... ở dòng 2,3----- -->
+    <p class="PTO2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo sint
+      maiores laudantium doloribus minus ratione expedita tempore eum dolorum.
+    </p>
+  </body>
+</html>
