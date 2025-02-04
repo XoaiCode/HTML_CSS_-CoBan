@@ -1,0 +1,23 @@
+.div-linear-gradient {
+  height: 100px;
+  margin-bottom: 10px;
+}
+.div-linear-gradient2 {
+  /* hướng chuyển màu không đặt- mặc định là từ trên xuống dưới */
+  background-image: linear-gradient(to bottom, red, blue);
+}
+.div-linear-gradient3 {
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to Left, green, #eeff00, rgb(179, 15, 15));
+}
+.div-linear-gradient4 {
+  width: 300px;
+  height: 300px;
+  /* % : là phần trăm không đổi màu tính từ điểm bắt đầu hướng chuyển màu */
+  background-image: linear-gradient(
+    green 30%,
+    #eeff00 60%,
+    rgb(179, 15, 15) 90%
+  );
+}
