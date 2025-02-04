@@ -1,0 +1,12 @@
+li {
+  list-style-type: none; /* Xoá dấu chấn thẻ li */
+  margin-top: 4px;
+}
+.fa-brands,
+.fa-solid {
+  color: rgb(0, 85, 255);
+  margin-right: 4px;
+}
+.fa-square-youtube {
+  color: red;
+}
