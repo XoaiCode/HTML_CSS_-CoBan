@@ -1,0 +1,97 @@
+/* --------------------------Background-Attachment--------------- */
+
+.div-scroll {
+  height: 300px;
+  background-image: url(./img/bien.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Mặc định là scroll */
+  background-attachment: scroll;
+}
+.div-local {
+  height: 200px;
+  width: 70%;
+  margin-top: 40px;
+  overflow: auto;
+  background-image: url(./img/tuyết.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(234, 255, 0);
+  background-attachment: local;
+}
+
+/* --------------------------Background-clip--------------- */
+
+.div-clip {
+  width: 100px;
+  height: 100px;
+  border: 20px dotted red;
+  padding: 20px;
+  margin: 30px;
+  background-image: url(./img/1.PNG);
+  display: inline-block;
+  background-size: cover;
+}
+.div-clip1 {
+  background-clip: border-box;
+  /* đây là thuộc tính mặc định */
+}
+.div-clip2 {
+  background-clip: padding-box;
+  /* ảnh chỉ đổ đến padding */
+}
+.div-clip3 {
+  background-clip: content-box;
+  /* ảnh chỉ đổ ở content */
+}
+
+/* --------------------------Background-clip:text--------------- */
+
+.strong-text {
+  /* Trong trường hợp nếu máy tính không hỗ trợ thì chuyển thành màu chữ */
+  color: blueviolet;
+}
+/* Kiểm tra trình duyệt có hỗ trợ (background-clip: text) or 
+(-webkit-background-clip: text) thì sử dụng lệnh @supports nếu
+hỗ trợ thì sẽ chạy lệnh nếu không hỗ trợ sẽ bỏ qua. */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .strong-text {
+    color: transparent; /* Làm cho chữ trong suốt*/
+    background-color: blueviolet;
+    /* Dải màu chuyển sắc */
+    background-color: #ff3cac;
+    background-image: linear-gradient(
+      270deg,
+      #ff3cac 0%,
+      #784ba0 50%,
+      #2b86c5 100%
+    );
+    background-clip: text;
+    /* Một số trang không hỗ trợ background-clip: text
+     nên phải prefix bằng -webkit-. */
+    -webkit-background-clip: text;
+  }
+}
+
+/* --------------------------Background-Origin--------------- */
+
+.div-origin {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border: 20px dotted red;
+  margin: 30px;
+  background-image: url(./img/1.PNG);
+  display: inline-block;
+  background-size: cover;
+}
+.origin1 {
+  background-origin: border-box;
+}
+.origin2 {
+  /* gốc của ảnh đặt mặc định */
+  background-origin: padding-box;
+}
+.origin3 {
+  background-origin: content-box;
+}
