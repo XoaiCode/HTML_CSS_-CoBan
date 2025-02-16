@@ -1,0 +1,10 @@
+.box-shadow {
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  background-color: aqua;
+  box-shadow: 60px -16px 5px blue;
+  /* Đổ nhiều bóng */
+  box-shadow: 260px 0 5px green, 0 260px 5px pink, 260px 260px 5px red;
+  border-radius: 15px;
+}
