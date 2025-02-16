@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bài 47: Pseudo-elements (Phần tử giả CSS)</title>
+  </head>
+  <body>
+    <h1>PSEUDO_ELEMENTS</h1>
+    <!-- Để định kiểu cho các phần tử cụ thể của một phần tử. -->
+
+    <h2>I, ::First-line</h2>
+    <!-- P::First-line: Chọn dòng đầu tiên các thẻ P -->
+    <!-- CHÚ Ý: Thuộc tính này không áp dụng với thẻ inline (Display: inline)
+     Chỉ có tác dụng với thẻ Block và Inline-block -->
+    <div class="div-first-line">
+      Sáng tạo cá nhân:
+      <p class="p-first-line">
+        Bây giờ, hãy sắp xếp những gì bạn đã viết thành các phần. Viết những
+        phần này xuống một tờ giấy trắng khác và để nó qua một bên. Hãy suy nghĩ
+        sâu sắc về người mà bạn muốn trở thành. Bài tập đầu tiên là phân tích,
+        còn bài tập này là sáng tạo. Đừng viết ra những gì bạn muốn đạt được như
+        thước dậy lúc 5h sáng hoặc tập thể dục hằng ngày. Không, đó không phải
+        là điều bạn cần phải làm, đó chỉ là những hoạt động. Khi bạn tập trung
+        vào các hoạt động, bạn sẽ giới hạn bản thân theo nhiều cách khác. Để
+        thay đổi vĩnh viễn, bạn cần thay đổi chính con người bạn.
+      </p>
+      <span
+        >Ví dụ: Bạn muốn trở thành một doanh nhân thành đạt. Mọi người thường
+        làm gì? Họ tham gia các lớp học, thử một số ý tưởng, kết nối với những
+        người cùng chí hướng, v.v ... Không nghi ngờ gì, tất cả những điều này
+        đều tốt nhưng vẫn chỉ là hành động.
+      </span>
+    </div>
+
+    <h2>II, ::First-letter</h2>
+    <!-- P::First-letter: Chọn chữ cái đầu tiên các thẻ p -->
+    <div class="div-first-letter">
+      <p class="p-first-letter">
+        Hãy quay trở lại với bài tập. Lúc này, bạn đã có một hồ sơ rõ ràng và
+        chi tiết về người mà bạn muốn trở thành. Càng áp dụng nhiều đặc điểm của
+        người đó thì càng tốt cho bạn. Hãy là người mà bạn muốn trở thành. Các
+        hành động sẽ là sản phẩm phụ của việc chuyển đổi: bạn sẽ tự động thức
+        dậy lúc 5h sáng, bạn sẽ rất thích dậy sớm và rất khó để ngủ dậy muộn,
+        bởi vì đó không phải là bạn nữa.
+      </p>
+    </div>
+
+    <h2>III, ::Selection</h2>
+    <!-- P::Selection: Chọn vùng đang được bôi đen các thẻ P -->
+    <div class="div-selection">
+      Thay đổi tư duy, hành động và cảm xúc theo cách mà bạn muốn:
+      <p class="p-selection">
+        Có thể bạn đang gặp khó khăn, hoặc đang gặp những chuyện không ai ngờ
+        đến, hoặc đã rất cố nỗ lực nhưng vẫn gặp nhiều thất bại. Điều đó có phải
+        do bạn thiếu may mắn không? Chắc chắn, nhưng bạn có biết may mắn chỉ đến
+        khi bạn thật sự nỗ lực, nỗ lực này phải là nỗ lực đúng, nghĩa là nỗ lực
+        có tư duy.
+      </p>
+    </div>
+
+    <h2>IV, ::Marker</h2>
+    <!-- P::Marker: Chọn các điểm đánh dấu của các phần tử li -->
+    <div class="div-marker">
+      <ul>
+        <li>
+          Đừng đi theo lối mòn, hãy thay đổi cách thức tiếp cận vấn đề để vượt
+          qua khó khăn. Và muốn như vậy, bạn cần học hỏi mỗi ngày.
+        </li>
+        <li>
+          Helen Keller từng nói: "Con người không thích suy nghĩ, họ phải đưa ra
+          kết luận. Mà kết luận không phải lúc nào cũng dễ chấp nhận".
+        </li>
+        <li>
+          Nhưng James Allan cũng nói:"Luật thu hoạch là gặt hái nhiều hơn gieo
+          hạt. Gieo một hành động và bạn gặt một thói quen. Gieo một thói quen
+          và bạn gặt tính cách. Gieo một tính cách bạn gặt vận mệnh".
+        </li>
+      </ul>
+    </div>
+
+    <h2>V, ::Before - ::After</h2>
+    <!-- .Before-After::Before: Thêm phần tử vào đăng trước class Before-After-->
+    <!-- .Before-After::Before: Thêm phần tử vào đăng sau class Before-After -->
+    <div class="div-before-after">
+      <p>
+        Bạn muốn xây dựng một công ty lớn, kiếm cả triệu đô, hay thay đổi cuộc
+        sống của mọi người, đóng góp cho thế giới? Đừng bao giờ để bất kì điều
+        gì giới hạn suy nghĩ của bạn. Bởi vì, bạn chưa có gì trong tay nên đừng
+        ngại hoài bão.
+      </p>
+      <p>
+        Hãy bắt tay vào hành động ngay từ những điều nhở nhất một cách thận
+        trọng để thực hiện hoài bão của mình. Mọi thành quả của bạn có được sẽ
+        tích luỹ dần và bồi đắp cho mục tiêu to lớn. Nhưng khi bạn không giám
+        đặt mục tiêu lớn, không dám hoài bão, kết quả bạn nhận được luôn là tầm
+        thường.
+      </p>
+    </div>
+  </body>
+</html>

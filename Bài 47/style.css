@@ -1,0 +1,47 @@
+/* -------------------First-line------------------ */
+
+.p-first-line::first-line {
+  color: red;
+}
+
+/* Nếu thay đổi thuộc tính thì sẽ có tác dụng */
+span {
+  /* display: inline-block; */
+}
+span::first-line {
+  color: blueviolet;
+  background-color: blue;
+}
+
+/* -------------------First-letter------------------ */
+.p-first-letter::first-letter {
+  font-size: 40px;
+  color: blue;
+}
+
+/* -------------------Selection------------------ */
+/* Nếu không viết gì (::selection) có nghĩa là tác động tất cả các thẻ */
+.p-selection::selection {
+  background-color: brown;
+  color: #fff;
+}
+
+/* -------------------Marker--------------------- */
+li::marker {
+  color: red;
+}
+
+/* -------------------Before - After-------------- */
+.div-before-after::before {
+  content: "Nghĩ lớn và bắt tay làm từ nhiều nhở nhất";
+  color: red;
+}
+.div-before-after::after {
+  /* Tạo ra các khối để trang trí và tạo ra phần gạch chân */
+  display: inline-block;
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: tomato;
+  border-radius: 999px;
+}
