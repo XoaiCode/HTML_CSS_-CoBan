@@ -1,0 +1,28 @@
+.css-counters {
+  /* Tạo 1 biến đếm, reset nó = 0  */
+  counter-reset: section;
+  padding-left: 30px;
+  background-color: aqua;
+}
+
+h2 {
+  /* Tăng biến đếm lên một */
+  counter-increment: section;
+  /* Tạo ra biến đếm và reset biến đếm thẻ h3 về 0 */
+  counter-reset: sub-section;
+}
+h2::before {
+  /* Thêm trước thẻ h2 */
+  content: "Phần " counter(section) ": ";
+  /* Counter(section): giá trị biến đếm */
+  /* "Phần " text chèn thêm */
+  color: red;
+}
+h3 {
+  counter-increment: sub-section;
+}
+h3::before {
+  content: counter(section) "." counter(sub-section) " ";
+  color: blue;
+  padding-left: 20px;
+}
