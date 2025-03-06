@@ -1,0 +1,16 @@
+.div-calc {
+  height: 100px;
+  width: calc(
+    100% - 100px
+  ); /*Khoảng cách đối với viền ngoài luôn cố định 50px */
+  background-color: #ccc;
+  margin: 0 auto; /* Căn giữa*/
+  text-align: center;
+}
+.main-calc {
+  background-color: blue;
+  height: calc(100vh - 100px);
+  /* Nếu sử dụng đơn vị % lệnh sẽ không hoạt động vì thẻ body tự động dãn ra với nội dung chính */
+}
+/* CHÚ Ý: sau CALC không được có khoảng trắng,
+Khi dùng với toán tử +, - , bắt buộc phải dùng khoảng trắng trước và sau toán tử +, -. */

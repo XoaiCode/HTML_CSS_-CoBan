@@ -1,0 +1,32 @@
+:root {
+  /* Khai báo biến */
+  --variables-height: 100px;
+  --variables-color: #0f0;
+}
+/* Dùng lệnh Var( tên biến) để dùng biến */
+.variables-box1 {
+  height: var(--variables-height);
+  background-color: var(--variables-color);
+  margin-bottom: 10px;
+}
+
+.variables-box2 {
+  height: var(--variables-height);
+  background-color: var(--variables-color);
+  margin-bottom: 10px;
+}
+
+.variables-box3 {
+  height: var(--variables-height);
+  background-color: var(--variables-color);
+  margin-bottom: 10px;
+}
+
+.p-variables {
+  --p-font_size: 30px;
+  /* font-size: var(--p-font_size); */
+}
+
+.p-variables spam {
+  font-size: var(--p-font_size);
+}
